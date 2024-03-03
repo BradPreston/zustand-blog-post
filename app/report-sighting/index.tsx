@@ -3,7 +3,7 @@ import useBearStore from "../../state";
 
 export default function ReportSighting() {
 	// grab the increasePopulation function from the useBearStore hook
-	const increasePopulation = useBearStore((state) => state.increasePopulation);
+	const increasePopulation = useBearStore(({ increasePopulation }) => increasePopulation);
 
 	// return the view for the Report Sighting page
 	return (

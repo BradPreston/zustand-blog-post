@@ -4,7 +4,7 @@ import useBearStore from "../state";
 
 export default function Home() {
 	// grab the total number of bears from the useBearStore hook
-	const bears = useBearStore((state) => state.bears);
+	const bears = useBearStore(({ bears }) => bears);
 
 	// return the style for the home page
 	return (
